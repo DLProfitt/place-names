@@ -1,12 +1,26 @@
 // Put your code here
 
 const names = [
-   "Nashville", "Hong Kong", "The back yard", "Earth",
-    "London", "The mall", "Ryman Auditorium", "The Great Wall of China"
+  "Nashville", "Hong Kong", "The back yard", "Earth",
+  "London", "The mall", "Ryman Auditorium", "The Great Wall of China"
 ];
 
 console.log("All Pace Names");
 
 for (const name of names) {
   console.log(name);
+}
+
+console.log("'The' Place Names");
+
+let theNames = [];
+
+for (const theName of names) {
+  if (theName.startsWith("The")) {
+    theNames.push(theName);
+  }
+}
+
+for (const singleTheName of theNames) {
+  console.log(singleTheName);
 }
